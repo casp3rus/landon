@@ -24,7 +24,7 @@ const HotelInfo = () => {
           <p>Our services and amenities are designed to make your travel easy, your stay comfortable, and your experience one-of-a-kind.</p>
           <ul>
             {
-              hotelInfoServicesData.map((service) => <li>{service}</li>)
+              hotelInfoServicesData.map((service) => <li>{service.name}</li>)
             }
           </ul>
         </section>
@@ -33,7 +33,7 @@ const HotelInfo = () => {
           <p>We're committed to maintaining the same quality of service for every individual. We offer the following facilities for those with special needs:</p>
           <ul>
             {
-              hotelInfoAccessibilityData.map((item) => <li>{item}</li>)
+              hotelInfoAccessibilityData.map((item) => <li>{item.name}</li>)
             }
           </ul>
         </section>
