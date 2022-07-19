@@ -21,7 +21,7 @@ accessibilitiesData.forEach(function(service) {
 
   dynamodb.put(params, function(err, data) {
     if (err)
-      console.error("Unable to load data into table for accessibility",
+      console.error("Unable to load data into table for service",
                     service.name, ". Error: ", JSON.stringify(err, null, 2))
     else
       console.log("Added", service.name, "to table.")
